@@ -1,0 +1,147 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* Container */
+.container {
+  padding: 30px 60px;
+}
+
+/* Dropdown */
+select {
+  padding: 8px 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Product Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  font-size: 15px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.card p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Button */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Cart Page */
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  gap: 20px;
+}
+
+.cart-item img {
+  height: 80px;
+}
+
+.cart-item h4 {
+  flex: 1;
+  font-size: 16px;
+}
+
+h2, h3 {
+  margin-top: 20px;
+}
+
+/* About Page */
+.container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
